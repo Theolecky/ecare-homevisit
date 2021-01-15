@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ecaresm</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="hint_email">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Full Name</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_search">Find Client</string>
+    <string name="btn_save_record">Save</string>
+    <string name="btn_cancel">Close</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered! Login Me.</string>
+    <string name="btn_follow_up">Fill Follow-up</string>
+    <string name="btn_due_and_missed">Due for Appt and Missed Appt</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">Log Out</string>
+    <string name="name">Full Name</string>
+    <string name="hint_service_number">Service Number</string>
+    <string name="hint_client_name">Client Name</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_client_type">Reason for phone call</string>
+    <string name="hint_additional_contact">Has additional contact that has not been tested</string>
+    <string name="hint_how_does_client_take_drugs">How Does Client Take Drugs</string>
+    <string name="hint_more_details_about_taking_drugs">If missing, tell more</string>
+    <string name="hint_any_complaints">Any Complaints</string>
+    <string name="hint_client_current_location">Client Current Location</string>
+    <string name="hint_pregnancy_outcome">Pregnancy Outcome</string>
+    <string name="hint_delivery_date">Delivery Date</string>
+    <string name="hint_delivery_place">Delivery Place</string>
+    <string name="hint_level_of_distress">Level Of Distress</string>
+    <string name="hint_action_taken">Action Taken</string>
+    <string name="hint_referred_to">Facility Referred To</string>
+    <string name="hint_clinical_notes">Clinical Notes</string>
+    <string name="client_type">Reason for phone call</string>
+    <string-array name="client_types">
+        <item>Select</item>
+        <item>New Client(ART less than 1 Yr)</item>
+        <item>Old Client(ART more than 1 Yr)</item>
+        <item>Defaulter Tracing/Traced Back</item>
+        <item>TB Client</item>
+        <item>ANC</item>
+        <item>PMTCT</item>
+        <item>HEI</item>
+        <item>High VL Client</item>
+        <item>Index/PNS Listing</item>
+        <item>Pharmacy Refill</item>
+        <item>Lab Sample Collection</item>
+        <item>GBV</item>
+        <item>PrEP</item>
+    </string-array>
+    <string name="hint_contacts_not_tested">Have Additional Contacts not Tested</string>
+    <string-array name="contacts_not_tested">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string name="hint_client_drugs">How does the client take drugs</string>
+    <string-array name="client_drugs">
+        <item>Select</item>
+        <item>Every day at the right time</item>
+        <item>Missing Sometimes</item>
+        <item>N/A</item>
+    </string-array>
+    <string-array name="pregnancy_outcomes">
+        <item>Select</item>
+        <item>Still Pregnant</item>
+        <item>Still Birth</item>
+        <item>Transfer Out</item>
+        <item>Miscarriage</item>
+        <item>Abortion</item>
+        <item>Normal Delivery</item>
+    </string-array>
+    <string-array name="delivery_place">
+        <item>Select</item>
+        <item>Hospital</item>
+        <item>Home</item>
+    </string-array>
+    <string-array name="level_of_distress">
+        <item>Select</item>
+        <item>Stable No problems</item>
+        <item>Some minor problems</item>
+        <item>Psychosocial problems, but family and friends are helping</item>
+        <item>Psychosocial problems, Am not sure what to do</item>
+        <item>Psychosocial problems, I cannot cope</item>
+    </string-array>
+    <string-array name="action_taken">
+        <item>Select</item>
+        <item>Refer client to clinic</item>
+        <item>Refer to social worker</item>
+        <item>Refer to nutritionist</item>
+        <item>Refer for laboratory sample collection</item>
+        <item>Emphasized on adherence</item>
+        <item>Collect prophylaxis drugs for baby</item>
+        <item>Continue with normal contacting</item>
+        <item>Reassure and education on COVID-19</item>
+        <item>Refer for GBV Services</item>
+    </string-array>
+    <string name="hint_source_of_information">Source of Information</string>
+    <string-array name="source_of_information">
+        <item>Select</item>
+        <item>Self</item>
+        <item>CHW</item>
+        <item>Relative</item>
+    </string-array>
+    <string name="hint_wrong_contact">Wrong Contact?</string>
+    <string name="hint_client_outcome">Client Outcome</string>
+    <string-array name="client_outcome">
+        <item>Select</item>
+        <item>Active</item>
+        <item>Defaulter</item>
+        <item>Transferred Out</item>
+        <item>Died</item>
+        <item>Refilled Elsewhere</item>
+        <item>Completed</item>
+        <item>Stopped</item>
+    </string-array>
+    <string name="hint_died_on">Died On</string>
+    <string name="hint_refilled_on">Refilled On</string>
+    <string name="hint_serial_number">Serial Number</string>
+    <string name="hint_notification_outcome">Notification Outcome</string>
+    <string-array name="notification_outcome">
+        <item>Select</item>
+        <item>Booked for Testing</item>
+        <item>Contact Received an HIV Test</item>
+        <item>Contact Known to be HIV-positive</item>
+    </string-array>
+    <string name="hint_date_tested">Date Tested</string>
+    <string name="hint_date_booked">Date Booked for Testing</string>
+    <string name="hint_hiv_results">HIV Test Results</string>
+    <string-array name="hiv_results">
+        <item>Select</item>
+        <item>Positive</item>
+        <item>Negative</item>
+    </string-array>
+    <string name="hint_tb_suspect">TB Suspect</string>
+    <string name="due_today">Due Tomorrow</string>
+    <string name="missed_appt">Missed Appts</string>
+    <!--CHW Report Form Start-->
+    <string name="hint_chw_rpt_date">Date</string>
+    <string name="hint_chw_rpt_chw_number">CHW Number</string>
+    <string name="hint_chw_rpt_name">Name</string>
+    <string name="hint_chw_rpt_progress">CHW Progress</string>
+    <string name="hint_chw_rpt_challenges">Challenges Encountered</string>
+    <string name="hint_chw_rpt_way_forward">Way Forward</string>
+    <string name="btn_chw_save_record">Save</string>
+    <string name="btn_chw_cancel">Close</string>
+    <string name="btn_chw_rpt_form">CHW Report Form</string>
+    <string name="btn_chw_search">Find CHW</string>
+    <!--CHW Report Form End-->
+
+    <!--HOME Visit tool Start-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Edarp Homevisit</string>
+    <string name="nav_header_subtitle">info@edarp.org</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Log out</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string name="reason1">New Client</string>
+    <string name="reason2">Defaulter Tracing</string>
+    <string name="reason3">TB Client</string>
+    <string name="reason4">PMTCT</string>
+    <string name="reason5">HEI Client</string>
+    <string name="reason6">High Viral Load Client</string>
+    <string name="select_reason">Select the Reason (s) for Home Visit:</string>
+
+    //New Client
+    <string name="newclientform">New Client Form:</string>
+    <string name="pillcount"> Number of pill count: </string>
+    <string name="nexttca">Number of days to the Next TCA</string>
+    <string name="stressful">"Is the client suffering from any stressful situation? "</string>
+    <string name="sexualpartner">"Is Sexual partner tested: "</string>
+    <string name="adr">Does the client have any ADR :</string>
+    <string name="yesadr">If yes, specify</string>
+    <string name="matchtca">Are the pills matching the TCA :</string>
+    <string name="issuedselftestkit">"If No, Was the client issued a Self-test Kit "</string>
+    <string name="testresults">If yes, what was the test result?</string>
+
+
+    <string-array name="yes_no">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="testresults">
+        <item>Select</item>
+        <item>Reactive</item>
+        <item>Non Reactive</item>
+    </string-array>
+
+    //Defaulter strings
+    <string name="defaulterform">Defaulter tracing Home visit form</string>
+    <string name="clientfound">"Was the client found : "</string>
+    <string name="reasonfordefaulting">"If Yes, Reason why the client defaulted "</string>
+    <string name="defaulteractiontaken">"Action taken: "</string>
+    <string name="defaulteraction1">" Call the clinician to attend the client"</string>
+    <string name="defaulteraction2">Accompany the client to the facility</string>
+    <string name="defaulteraction3">Collect drugs for the client</string>
+    <string name="defaulteroutcome">Defaulter tracing outcome :</string>
+    <string name="defaulteroutcome1">Client Self Transferred out</string>
+    <string name="defaulteroutcome2">" Client Died"</string>
+    <string name="defaulteroutcome3">"Client Shifted "</string>
+    <string name="shiftedto">Specify Shifted to</string>
+    <string name="selftransferredto">Client self transferred to</string>
+
+    //HEI strings
+    <string name="heiform">HEI Form</string>
+    <string name="pcr">Are all the PCR done according to the guideline (this will depend with the age) :</string>
+    <string name="pcrreason">"If No, Specify the reason "</string>
+    <string name="antibodytest">Is the antibody test done(18 Months and above)? :</string>
+    <string name="noantibodyreason">"If No, Specify the reason "</string>
+    <string name="prophylaxis">"Is the child taking Prophylaxis :  "</string>
+    <string name="noprophylaxis">"If No, Specify the reason : "</string>
+    <string name="heiactiontaken">"Action taken: "</string>
+    <string name="heiaction1">Call the clinician to attend the client</string>
+    <string name="heiaction2">Accompany the client to the facility</string>
+    <string name="heiaction3">Collect prophylaxis drugs for baby</string>
+    <string name="heiaction4">" Book child for follow up antibody test"</string>
+
+
+    //High viral load clients
+    <string name="viralform">High Viral load client Form</string>
+    <string name="viralsexualpartner">Is your Sexual partner tested :</string>
+    <string name="viralselftestkit">"If No, Was the client issued a Self-test Kit :  "</string>
+    <string name="lastvl">When was the last VL done :</string>
+    <string name="drugstime">Does the client take the drugs in the right time :</string>
+    <string name="nodrugstimereason">" If No, Specify the reason  "</string>
+    <string name="viralmdt">Is the client on MDT :</string>
+    <string name="nomdtreason">" If No, Specify the reason : "</string>
+    <string name="btn">Save</string>
+    <string name="dd_month_yyyy">DD/MM/YYYY</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <!--HOME Visit toolEnd-->
+
+</resources>

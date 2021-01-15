@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomevisitActivity">
+
+    <LinearLayout
+        android:id="@+id/parentlinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0e0e0"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="96dp">
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_reason"
+            android:textColor="#4f6280"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/newclientCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason1"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/defaulterCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason2"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/tbCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason3"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/pmtctCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason4"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/heiCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason5"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/viralCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="20dp"
+            android:text="@string/reason6"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/newclientlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#adacac"
+            android:visibility="gone"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/newclientformTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newclientform"
+                android:textColor="#4f6280"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/pillcountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pillcount"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pillcountEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/nexttcaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nexttca"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nexttcaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <TextView
+                    android:id="@+id/matchtcaTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/matchtca"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/matchtca_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/adrTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adr"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/adr_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yesadrlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/yesadrTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yesadr"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/yesadrEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/sexualpartnerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sexualpartner"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/sexualpartner_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selftestkitlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/issuedselftestkitTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/issuedselftestkit"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/issuedselftestkit_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/testresultslinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/testresultsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/testresults"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/testresults_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/stressfulTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stressful"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/stressful_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/defaulterlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#adacac"
+            android:visibility="gone"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/defaulterformTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defaulterform"
+                android:textColor="#4f6280"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/clientfoundTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clientfound"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/clientfound_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reasonlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/reasonfordefaultingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reasonfordefaulting"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/reasonfordefaultingEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/defaulteractiontakenTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/defaulteractiontaken"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/callclinicianCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="10dp"
+                    android:text="@string/defaulteraction1"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/accompanyclientCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="10dp"
+                    android:text="@string/defaulteraction2"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/collectdrugsCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="10dp"
+                    android:text="@string/defaulteraction3"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/defaulteroutcomeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defaulteroutcome"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/selftransferredCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/defaulteroutcome1"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:id="@+id/selftransferredLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/selftransferredTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selftransferredto"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/selftransferredEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/clientdiedCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/defaulteroutcome2"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/shiftedCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/defaulteroutcome3"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/shiftedLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/shiftedtoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shiftedto"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/shiftedtoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/heilinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#adacac"
+            android:visibility="gone"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/heiformTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heiform"
+                android:textColor="#4f6280"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/pcrTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pcr"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/pcr_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pcrlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/pcrreasonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pcrreason"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/pcrreasonEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/antibodytestTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/antibodytest"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/antibodytest_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/antibodylinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/noantibodyreasonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noantibodyreason"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/noantibodyreasonEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/prophylaxisTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prophylaxis"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/prophylaxis_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/prophylaxislinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/noprophylaxisTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noprophylaxis"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/noprophylaxisEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/heiactiontakenTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heiactiontaken"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/heicallclinicianCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/heiaction1"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/heiaccompanyclientCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/heiaction2"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/heicollectprophylaxisCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/heiaction3"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/heiantibodytestCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="10dp"
+                android:text="@string/heiaction4"
+                android:textColor="#101010"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/virallinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#adacac"
+            android:visibility="gone"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/viralformTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="@string/viralform"
+                android:textColor="#4f6280"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viralsexualpartnerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viralsexualpartner"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/viralsexualpartner_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viralsexualpartnerlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/viralselftestkitTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viralselftestkit"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/viralselftestkit_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/edtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lastvl" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/in_date"
+                    android:hint="@string/dd_month_yyyy"
+                    android:layout_alignParentLeft="true"
+                    android:inputType="date"
+                    android:layout_alignParentStart="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/drugstimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drugstime"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/drugstime_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/drugstimelinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nodrugstimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nodrugstimereason"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/nodrugstimeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viralmdtTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viralmdt"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/viralmdt_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viralmdtlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nomdtTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nomdtreason"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/nomdtEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonsave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/mybtn"
+                android:layout_marginEnd="20dp"
+                android:text="@string/btn_save_record"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp">
+            </Button>
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/white"
+                android:text="@string/btn_cancel"
+                android:background="@drawable/btn_logout_bg"
+                android:layout_marginLeft="20dp">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
